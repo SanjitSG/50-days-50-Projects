@@ -10,6 +10,7 @@
   <body>
     <div class="main-container">
       <div class="card-container">
+        <!-- image section start -->
         <section class="card-section card-main-img">
           <a href="#"
             ><img
@@ -18,11 +19,15 @@
               alt="driver-image"
           /></a>
         </section>
+        <!-- image section end -->
+        <!-- Driver details section start -->
         <section class="card-section card-driver-details">
           <div class="driver-details-top">
             <span id="driver-description"><h5>Safe Driver</h5></span>
+
+            <!-- Driver detail tabs  start-->
             <div class="driver-details-tab">
-              <ul>
+              <ul class="tabs">
                 <li>
                   <a href="#"><img src="images/1.svg" alt="safe driver" /></a>
                 </li>
@@ -37,9 +42,12 @@
                 </li>
               </ul>
               <hr />
+              <!-- Driver details tab end -->
+
+              <!-- Driver details section middle start -->
               <div class="logo-section">
                 <div class="logo">
-                  <a href="#"><img src="images/awesome drive logo.svg" alt="" /></a>
+                  <a href="#"><img id="logo" src="images/awesome drive logo.svg" alt="" /></a>
                 </div>
                 <div class="info">
                   <ul>
@@ -49,14 +57,46 @@
                   </ul>
                 </div>
               </div>
+              <!-- Driver details section middle end -->
             </div>
           </div>
           <div class="driver-details-bottom">
-            <div class="contact-btn"></div>
+            <div class="contact-btn">
+              <ul>
+                <li>
+                  <a href="#"><img src="images/8.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/9.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/10.svg" alt="" /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section class="card-section card-price-details">div3</section>
+        <!-- Driver details section end -->
+
+        <!-- Pricing section start -->
+        <section class="card-section card-price-details">
+          <div class="price-top">
+            <h4>AED 80</h4>
+            <span class="price-span"
+              ><img src="images/6.svg" />
+              <p>One-way</p></span
+            >
+          </div>
+          <div class="price-bottom">
+            <h4>AED 150</h4>
+            <span class="price-span"
+              ><img src="images/6.svg" />
+              <p>Two-way</p></span
+            >
+          </div>
+        </section>
       </div>
+      <!-- Pricing section end -->
     </div>
     <script src="script.js"></script>
   </body>
