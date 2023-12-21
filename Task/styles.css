@@ -27,7 +27,7 @@ body {
 }
 
 .card-section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* container styling */
 
@@ -145,7 +145,6 @@ body {
   justify-content: space-evenly;
   list-style: none;
   margin: 0 auto;
-  border-radius: 30px;
 }
 
 .driver-details-bottom li {
@@ -203,7 +202,7 @@ body {
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
-    max-width: 70%;
+    width: 30%;
     min-width: 425px;
     border-radius: 30px;
   }
@@ -217,9 +216,8 @@ body {
 
   /* drive awesome logo */
   .logo {
-    border: 1px solid red;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: -90px;
     width: 80px;
     overflow: hidden;
@@ -230,4 +228,68 @@ body {
     object-fit: cover;
   }
   /* drive awesome logo-end */
+
+  /* driver details tab */
+  .driver-details-tab ul {
+    width: 250px;
+    height: auto;
+  }
+  /* driver details tab end */
+
+  /* price */
+  .card-price-details {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    min-width: 350px;
+    height: 100px;
+    bottom: 250px;
+    width: 90%;
+    padding-top: 50px;
+    border: none;
+  }
+  /*price end  */
+
+  /* logo section info */
+
+  .logo-section {
+    padding-top: 100px;
+    left: -40px;
+  }
+
+  .logo-section .info ul {
+    width: 100%;
+  }
+  /* logo section info end */
+
+  /* driver details btns */
+  .driver-details-bottom {
+    width: 100%;
+    height: 70px;
+    position: relative;
+  }
+  .driver-details-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .driver-details-bottom li:first-child {
+    border-radius: 0px 0px 0px 30px;
+    background: #eb8515;
+    width: 100%;
+  }
+  .driver-details-bottom li:last-child {
+    width: 100%;
+    border-radius: 0px 0px 30px 0px;
+    background: #4d4d4d;
+  }
+  .driver-details-bottom li:nth-child(2) {
+    width: 100%;
+    background: #54cc5c;
+  }
 }
