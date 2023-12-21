@@ -212,44 +212,49 @@ body {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
-  /* main image end */
+
+  /* driver details heading */
+  #driver-description {
+    margin-left: -20px;
+  }
 
   /* drive awesome logo */
   .logo {
     position: absolute;
-    right: 15px;
+    right: -30px;
     top: -90px;
-    width: 80px;
+    width: 95px;
+    height: auto;
     overflow: hidden;
   }
   .logo img {
-    width: 75px;
+    width: 90px;
     height: auto;
     object-fit: cover;
   }
-  /* drive awesome logo-end */
 
   /* driver details tab */
+
+  .driver-details-tab {
+    margin-left: -20px;
+  }
   .driver-details-tab ul {
     width: 250px;
     height: auto;
   }
-  /* driver details tab end */
 
   /* price */
   .card-price-details {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     max-width: 350px;
     min-width: 350px;
     height: 100px;
-    bottom: 250px;
+    top: 510px;
     width: 90%;
-    padding-top: 50px;
     border: none;
   }
-  /*price end  */
 
   /* logo section info */
 
@@ -261,7 +266,6 @@ body {
   .logo-section .info ul {
     width: 100%;
   }
-  /* logo section info end */
 
   /* driver details btns */
   .driver-details-bottom {
