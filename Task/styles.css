@@ -23,8 +23,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
+.card-section {
+  border: 1px solid red;
+}
 /* container styling */
 
 .card-container {
@@ -111,6 +115,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 .logo-section a {
   display: inline-block;
@@ -199,11 +204,30 @@ body {
   .card-container {
     flex-direction: column;
     max-width: 70%;
+    min-width: 425px;
     border-radius: 30px;
   }
+  /* main image */
   .card-main-img {
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
+  /* main image end */
+
+  /* drive awesome logo */
+  .logo {
+    border: 1px solid red;
+    position: absolute;
+    right: 10px;
+    top: -90px;
+    width: 80px;
+    overflow: hidden;
+  }
+  .logo img {
+    width: 75px;
+    height: auto;
+    object-fit: cover;
+  }
+  /* drive awesome logo-end */
 }
