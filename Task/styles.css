@@ -26,9 +26,6 @@ body {
   position: relative;
 }
 
-.card-section {
-  /* border: 1px solid red; */
-}
 /* container styling */
 
 .card-container {
@@ -183,6 +180,7 @@ body {
   border-left-width: 1px;
   border-left-color: #e2dede;
   margin-left: 10px;
+  width: 300px;
 }
 
 .card-price-details h4 {
