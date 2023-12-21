@@ -142,6 +142,7 @@ body {
   justify-content: space-evenly;
   list-style: none;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .driver-details-bottom li {
@@ -180,7 +181,8 @@ body {
   border-left-width: 1px;
   border-left-color: #e2dede;
   margin-left: 10px;
-  width: 300px;
+  width: 170px;
+  min-width: 170px;
 }
 
 .card-price-details h4 {
@@ -279,6 +281,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-bottom: 0px;
   }
   .driver-details-bottom li:first-child {
     border-radius: 0px 0px 0px 30px;
