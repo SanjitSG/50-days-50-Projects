@@ -23,7 +23,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 /* container styling */
@@ -34,6 +33,7 @@ body {
   min-height: 256px;
   border-radius: 5px;
   display: flex;
+  position: relative;
 }
 .card-main-img {
   width: 25%;
@@ -132,12 +132,16 @@ body {
 }
 
 /* driver details bottom contact*/
-.driver-details-bottom {
+.driver-details-buttons {
+  position: absolute;
   width: 80%;
   margin: 0 auto;
+  bottom: 0;
+  width: 380px;
+  left: 290px;
 }
 
-.driver-details-bottom ul {
+.driver-details-buttons ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -145,30 +149,32 @@ body {
   padding-bottom: 10px;
 }
 
-.driver-details-bottom li {
+.driver-details-buttons li {
   background-color: #f0f0f0;
   padding: 10px 55px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.driver-details-bottom img {
+.driver-details-buttons img {
   filter: invert(1);
-  width: 20px;
+  width: 100%;
 }
 
-.driver-details-bottom li:first-child {
+.driver-details-buttons li:first-child {
   border-radius: 20px 0px 0px 20px;
   background: #eb8515;
 }
-.driver-details-bottom li:last-child {
+.driver-details-buttons li:last-child {
   border-radius: 0px 20px 20px 0px;
   background: #4d4d4d;
 }
-.driver-details-bottom li:nth-child(2) {
+.driver-details-buttons li:nth-child(2) {
   background: #54cc5c;
 }
-.driver-details-bottom li a {
+.driver-details-buttons li a {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Price section */
@@ -201,100 +207,84 @@ body {
 
 @media (max-width: 768px) {
   .card-container {
+    display: flex;
     flex-direction: column;
-    width: 30%;
-    min-width: 425px;
+    margin: 30px;
+    width: 350px;
+    height: 600px;
+    min-height: 65%;
     border-radius: 30px;
+    position: relative;
   }
+
   /* main image */
   .card-main-img {
-    width: 100%;
+    width: 350px;
+    height: 250px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
-
-  /* driver details heading */
-  #driver-description {
-    margin-left: -20px;
-  }
-
-  /* drive awesome logo */
-  .logo {
-    position: absolute;
-    right: -30px;
-    top: -90px;
-    width: 95px;
-    height: auto;
-    overflow: hidden;
-  }
-  .logo img {
-    width: 90px;
-    height: auto;
-    object-fit: cover;
-  }
-
   /* driver details tab */
-
-  .driver-details-tab {
-    margin-left: -20px;
-  }
-  .driver-details-tab ul {
-    width: 250px;
-    height: auto;
-  }
-
-  /* price */
-  .card-price-details {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    max-width: 350px;
-    min-width: 350px;
-    height: 100px;
-    top: 452px;
-    width: 90%;
-    border: none;
-  }
-
-  /* logo section info */
-
-  .logo-section {
-    padding-top: 100px;
-    left: -40px;
-  }
-
-  .logo-section .info ul {
-    width: 100%;
-  }
-
-  /* driver details btns */
-  .driver-details-bottom {
-    width: 100%;
-    height: 70px;
+  .card-driver-details {
     position: relative;
   }
-  .driver-details-bottom ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0 auto;
+
+  /* driver details price */
+  .card-price-details {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 0px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0;
+    border: 0;
+    top: 350px;
+    padding-left: 30px;
+    margin-left: 10px;
+    h4 {
+      font-size: 1.5rem;
+    }
   }
-  .driver-details-bottom li:first-child {
-    border-radius: 0px 0px 0px 30px;
-    background: #eb8515;
-    width: 100%;
+
+  .logo {
+    position: absolute;
+    top: -95px;
+    right: -60px;
+    #logo {
+      width: 60%;
+    }
   }
-  .driver-details-bottom li:last-child {
-    width: 100%;
-    border-radius: 0px 0px 30px 0px;
-    background: #4d4d4d;
+  .logo-section {
+    padding-top: 100px;
+
+    ul {
+      padding-left: 0;
+    }
   }
-  .driver-details-bottom li:nth-child(2) {
-    width: 100%;
-    background: #54cc5c;
+  .driver-details-buttons {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 350px;
+
+    li {
+      padding: 5px 46px;
+      margin: 0;
+
+      a {
+        img {
+          width: 25px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    li:first-child {
+      border-radius: 0px 0px 0px 30px;
+    }
+    li:last-child {
+      border-radius: 0px 0px 30px 0px;
+    }
   }
 }
