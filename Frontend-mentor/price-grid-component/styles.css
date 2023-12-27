@@ -118,6 +118,7 @@ h2 {
 
 @media only screen and (max-width: 425px) {
   .container {
+    min-width: 375px;
     margin: 20px;
     display: flex;
     justify-content: center;
