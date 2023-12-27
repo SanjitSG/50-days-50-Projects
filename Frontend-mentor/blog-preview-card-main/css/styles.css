@@ -80,16 +80,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  img {
-    margin-right: 8px;
-    width: 30px;
-  }
-  p {
-    font-weight: 800;
-    font-size: 12px;
-  }
 }
 
+footer img {
+  margin-right: 8px;
+  width: 30px;
+}
+footer p {
+  font-weight: 800;
+  font-size: 12px;
+}
 @media only screen and (max-width: 475px) {
   .container {
     min-width: 325px;
