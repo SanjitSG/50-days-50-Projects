@@ -119,7 +119,6 @@ h2 {
 @media only screen and (max-width: 425px) {
   .container {
     margin: 20px;
-    min-width: 375px;
   }
   .wrapper {
     margin: 10px;
