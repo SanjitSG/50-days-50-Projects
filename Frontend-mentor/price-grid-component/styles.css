@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -116,8 +116,9 @@ h2 {
   padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .container {
+    margin: 20px;
     min-width: 375px;
   }
   .wrapper {
