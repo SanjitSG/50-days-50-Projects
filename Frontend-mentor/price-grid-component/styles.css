@@ -119,6 +119,8 @@ h2 {
 @media only screen and (max-width: 425px) {
   .container {
     margin: 20px;
+    display: flex;
+    justify-content: center;
   }
   .wrapper {
     margin: 10px;
