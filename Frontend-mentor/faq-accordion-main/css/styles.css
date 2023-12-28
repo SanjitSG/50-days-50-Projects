@@ -76,8 +76,13 @@ hr {
   max-height: 150px;
 }
 
+.question-container:focus {
+  outline: 2px solid blue;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 375px;
+    min-height: 50%;
   }
 }

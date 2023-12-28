@@ -26,3 +26,26 @@ for (let element of minus) {
     parentElement.nextElementSibling.classList.toggle("opened");
   });
 }
+
+// keyboard navigation
+const questionContainers = document.querySelectorAll(".question-container");
+
+questionContainers.forEach((questionContainer) => {
+  questionContainer.addEventListener("keydown", (event) => {
+    console.log(event.key);
+    if (event.key === "ArrowDown") {
+      const nextQuestion = questionContainer.nextElementSibling.nextElementSibling.nextElementSibling;
+
+      if (nextQuestion) {
+        nextQuestion.focus();
+      }
+    } else if (event.key === "ArrowUp") {
+      const previousQuestion = questionContainer.previousElementSibling.previousElementSibling.previousElementSibling;
+      if (previousQuestion) {
+        previousQuestion.focus();
+      }
+    } else if (event.key === "Enter") {
+      questionContainer.querySelector(".plus").click();
+    }
+  });
+});
