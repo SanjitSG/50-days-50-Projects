@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+:root {
+  /* color */
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-pink: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background-size: 100%;
+  background-color: var(--light-pink);
+}
+
+.container {
+  background: var(--white);
+  width: 550px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  padding: 15px 0;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container p {
+  color: var(--dark-purple);
+  text-align: justify;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.container img {
+  cursor: pointer;
+}
+
+img.hidden {
+  display: none;
+}
+
+.faq-answer {
+  max-height: 0;
+}
+
+hr {
+  border: 0.5px solid var(--light-pink);
+}
+
+.opened {
+  max-height: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 375px;
+  }
+}
