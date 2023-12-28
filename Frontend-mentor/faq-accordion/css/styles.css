@@ -77,7 +77,7 @@ hr {
 }
 
 .question-container:focus {
-  outline: 2px solid blue;
+  outline: 1px solid blue;
 }
 
 @media only screen and (max-width: 768px) {
