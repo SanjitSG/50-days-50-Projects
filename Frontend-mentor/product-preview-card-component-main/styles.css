@@ -2,6 +2,11 @@
 
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
 }
 *,
 ::after,
@@ -13,5 +18,34 @@
 
 body {
   /* font-family: 'Fraunces', serif; */
+  background-color: var(--cream);
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: var(--white);
+  width: 520px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .left {
+  width: 50%;
+}
+
+.container .left img {
+  height: 100%;
+  width: 100%;
+}
+
+.container .right {
+  width: 50%;
+  padding: 20px;
 }
