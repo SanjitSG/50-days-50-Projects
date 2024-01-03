@@ -103,3 +103,40 @@ footer {
   position: sticky;
   top: 100vh;
 }
+
+@media only screen and (max-width: 478px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 65vh;
+  }
+
+  .container .left {
+    width: 100%;
+    height: 40%;
+  }
+  .container .left img {
+    object-fit: cover;
+  }
+
+  .container .right {
+    width: 100%;
+    height: 60%;
+  }
+  .container .right h1 {
+    padding-top: 10px;
+  }
+  .container .right p {
+    font-size: 16px;
+  }
+  .container .right .price {
+    font-size: 30px;
+    gap: 16px;
+  }
+  .container .right a {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
