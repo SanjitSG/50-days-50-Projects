@@ -30,7 +30,7 @@ body {
 
 .container {
   background: var(--white);
-  width: 520px;
+  width: 540px;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
@@ -52,9 +52,54 @@ body {
 
 #top-text {
   text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
-h1 {
+.container .right h1 {
   font-family: "Fraunces", serif;
   line-height: 1;
+  padding: 20px 0;
+  color: var(--very-dark-blue);
+}
+
+.container .right p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+}
+
+.container .right .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: var(--dark-cyan);
+  padding-bottom: 20px;
+}
+
+.container .right #discount {
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.container .right a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 13px 30px;
+  background: var(--dark-cyan);
+  color: var(--white);
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
 }
