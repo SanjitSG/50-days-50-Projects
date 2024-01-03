@@ -17,7 +17,7 @@
 }
 
 body {
-  /* font-family: 'Fraunces', serif; */
+  /* */
   background-color: var(--cream);
   font-family: "Montserrat", sans-serif;
   height: 100vh;
@@ -48,4 +48,13 @@ body {
 .container .right {
   width: 50%;
   padding: 20px;
+}
+
+#top-text {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  line-height: 1;
 }
