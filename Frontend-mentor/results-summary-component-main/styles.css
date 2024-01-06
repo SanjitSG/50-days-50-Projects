@@ -173,6 +173,7 @@ body {
 @media only screen And (max-width: 425px) {
   .container {
     width: 90%;
+    min-width: 375px;
     height: 95vh;
     display: flex;
     flex-direction: column;
