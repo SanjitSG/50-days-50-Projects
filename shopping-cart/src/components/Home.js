@@ -1,7 +1,9 @@
+import Filter from "./Filter";
 const Home = () => {
   return (
-    <div>
-      <h1>Home Component</h1>
+    <div className="home">
+      <Filter />
+      <div className="productContainer"></div>
     </div>
   );
 };
