@@ -1,4 +1,8 @@
 const Filter = () => {
-  return <h1>Filter Comp</h1>;
+  return (
+    <div className="filters">
+      <h2>filter com</h2>
+    </div>
+  );
 };
 export default Filter;

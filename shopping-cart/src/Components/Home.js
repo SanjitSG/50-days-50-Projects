@@ -1,9 +1,21 @@
 import { CartState } from "../Context/Context";
+
+import SingleProduct from "./SingleProduct";
+import Filter from "./Filter";
+import { useContext } from "react";
 const Home = () => {
-  console.log(CartState());
+  const {
+    state: { products },
+    productState: { byStock, quickDelivery, byRating },
+  } = CartState();
   return (
-    <div>
-      <h2>Home component</h2>
+    <div className="home">
+      <Filter />
+      <div className="productContainer">
+        {products.map((prod) => (
+          <SingleProduct prod={prod} key={prod.id} />
+        ))}
+      </div>
     </div>
   );
 };
