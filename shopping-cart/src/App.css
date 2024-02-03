@@ -9,13 +9,22 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.filters {
-  width: 20%;
-}
 
 /* single product card */
 
 .products {
   width: 30%;
   margin: 10px;
+}
+
+/* filter */
+.filters {
+  background-color: dimgray;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: ;
 }

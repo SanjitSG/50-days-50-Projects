@@ -16,7 +16,7 @@ const Header = () => {
   } = CartState();
   console.log(CartState());
   return (
-    <Navbar bg="primary" variant="dark">
+    <Navbar bg="primary" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand>
           <Link to="/" style={{ color: "white", textDecoration: "none" }}>
