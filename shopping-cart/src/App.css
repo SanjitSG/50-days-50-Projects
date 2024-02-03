@@ -1,3 +1,28 @@
+/* mini cart */
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+}
+
+.cartItemImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#delete {
+  color: red;
+}
+.cartItemDetails {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 .home {
   display: flex;
 }
@@ -26,5 +51,9 @@
   flex-direction: column;
   width: 20%;
   margin: 10px;
-  height: ;
+  height: 86vh;
+}
+
+.filters > span {
+  padding-bottom: 20px;
 }
