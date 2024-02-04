@@ -54,7 +54,7 @@ const Header = () => {
         </Navbar.Brand>
 
         <Navbar.Text className="search">
-          <FormControl style={{ width: 500 }} type="search" placeholder="Search a product" class="m-auto"></FormControl>
+          <FormControl style={{ width: 500 }} type="search" placeholder="Search a product" className="m-auto"></FormControl>
         </Navbar.Text>
         <Nav>
           <Dropdown drop="start">
@@ -73,12 +73,12 @@ const Header = () => {
                   <AiFillDelete
                     style={{ cursor: "pointer" }}
                     fontSize="20px"
-                    onClick={() => {
-                      dispatch({
-                        type: "REMOVE_FROM_CART",
-                        payload: prod,
-                      });
-                    }}
+                    // onClick={() => {
+                    //   dispatch({
+                    //     type: "REMOVE_FROM_CART",
+                    //     payload: prod,
+                    //   });
+                    // }}
                     id="delete"
                   />
                 </span>
