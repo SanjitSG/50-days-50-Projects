@@ -9,41 +9,41 @@ import { AiFillDelete } from "react-icons/ai";
 
 import { CartState } from "../Context/Context";
 const Header = () => {
-  // const {
-  //   state: { cart },
-  //   dispatch,
-  //   productDispatch,
-  // } = CartState();
-  const cart = [
-    {
-      id: "9882d49f-bfab-45a2-9e64-22f297df47cc",
-      name: "Licensed Concrete Gloves",
-      price: "365",
-      image: "https://loremflickr.com/640/480?lock=773740273074176",
-      inStock: 0,
-      quickDelivery: false,
-      ratings: 4,
-    },
-    {
-      id: "ef84cb59-02dd-403c-94a6-982d672791ce",
-      name: "Elegant Frozen Table",
-      price: "330",
-      image: "https://picsum.photos/seed/jpc2ydy/640/480",
-      inStock: 5,
-      quickDelivery: true,
-      ratings: 3,
-    },
-    {
-      id: "700c4245-20f3-4398-8b03-a3f48caed1bd",
-      name: "Elegant Steel Salad",
-      price: "980",
-      image: "https://picsum.photos/seed/lMgqznWb/640/480",
-      inStock: 6,
-      quickDelivery: false,
-      ratings: 3,
-    },
-  ];
-  console.log(CartState());
+  const {
+    state: { cart },
+    dispatch,
+    productDispatch,
+  } = CartState();
+  // const cart = [
+  //   {
+  //     id: "9882d49f-bfab-45a2-9e64-22f297df47cc",
+  //     name: "Licensed Concrete Gloves",
+  //     price: "365",
+  //     image: "https://loremflickr.com/640/480?lock=773740273074176",
+  //     inStock: 0,
+  //     quickDelivery: false,
+  //     ratings: 4,
+  //   },
+  //   {
+  //     id: "ef84cb59-02dd-403c-94a6-982d672791ce",
+  //     name: "Elegant Frozen Table",
+  //     price: "330",
+  //     image: "https://picsum.photos/seed/jpc2ydy/640/480",
+  //     inStock: 5,
+  //     quickDelivery: true,
+  //     ratings: 3,
+  //   },
+  //   {
+  //     id: "700c4245-20f3-4398-8b03-a3f48caed1bd",
+  //     name: "Elegant Steel Salad",
+  //     price: "980",
+  //     image: "https://picsum.photos/seed/lMgqznWb/640/480",
+  //     inStock: 6,
+  //     quickDelivery: false,
+  //     ratings: 3,
+  //   },
+  // ];
+  // console.log(CartState());
   return (
     <Navbar bg="primary" variant="dark" sticky="top">
       <Container>
