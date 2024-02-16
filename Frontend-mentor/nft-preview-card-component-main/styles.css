@@ -21,4 +21,11 @@ body {
   background: var(--Very-dark-blue-card);
   padding: 15px;
   border-radius: 10px;
+  width: 375px;
+  height: 80vh;
+}
+
+img#hero-img {
+  width: 100%;
+  height: auto;
 }
