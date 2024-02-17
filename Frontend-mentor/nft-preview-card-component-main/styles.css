@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --Soft-blue: hsl(215, 51%, 70%);
   --Cyan: hsl(178, 100%, 50%);
@@ -19,13 +24,34 @@ body {
 
 .card {
   background: var(--Very-dark-blue-card);
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   width: 375px;
-  height: 80vh;
+  height: 90vh;
 }
 
 img#hero-img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  color: var(--White);
+}
+p {
+  color: var(--Very-dark-blue);
+  font-size: 18px;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.price-section #eth-price {
+  color: var(--Cyan);
 }
