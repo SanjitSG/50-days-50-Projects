@@ -11,17 +11,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="card">
-      <img id="hero-img" src="/images/image-equilibrium.jpg" alt="image-equilibrium" />
-      <section class="content">
-        <h2>Equilibrium #3429</h2>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div class="price-section">
-          <span id="eth-price"><img src="/images/icon-ethereum.svg" alt="icon-ethereum" />0.041 ETH</span> <span id="eth-time"><img src="/images/icon-clock.svg" alt="icon-clock" /> 3 days left</span>
+    <main class="container">
+      <div class="card">
+        <div class="image-container">
+          <img id="hero-img" src="/images/image-equilibrium.jpg" alt="image-equilibrium" />
+          <div class="overlay"></div>
+          <img src="images/icon-view.svg" alt="view icon" class="view" />
         </div>
-        <hr />
-        <img src="/images/image-avatar.png" alt="image-avatar" /> Creation of <strong>Jules Wyvern</strong>
-      </section>
-    </div>
+        <section class="content">
+          <h2 class="title">Equilibrium #3429</h2>
+          <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+
+          <div class="eth-info">
+            <div class="info"><img src="/images/icon-ethereum.svg" alt="icon-ethereum" class="icon" /><span class="eth">0.041 ETH</span></div>
+            <div class="info"><img src="/images/icon-clock.svg" alt="icon-clock" class="icon" /><span>3 days left</span></div>
+          </div>
+          <div class="creator-info">
+            <img src="/images/image-avatar.png" alt="image-avatar" class="avatar" />
+            <p class="creator-text">Creation of <span class="creator-name">Jules Wyvern</span></p>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
