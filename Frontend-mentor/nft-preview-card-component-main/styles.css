@@ -141,6 +141,21 @@ body {
   cursor: pointer;
 }
 
+/* Footer Section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--color-cyan);
+}
+
 @media screen and (max-width: 300px) {
   .eth-info {
     flex-direction: column;
