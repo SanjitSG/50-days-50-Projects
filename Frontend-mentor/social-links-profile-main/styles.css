@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-bg: hsl(0, 0%, 8%);
+  --color-card-bg: hsl(0, 0%, 12%);
+  --color-btn-bg: hsl(0, 0%, 20%);
+  --color-text: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+/* card */
+.card {
+  background-color: var(--color-card-bg);
+  width: min(87.5%, 22rem);
+  width: 375px;
+  padding: 1.5rem 1.6rem 2rem;
+
+  border-radius: 10px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+/* details-top container */
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  border-radius: 50%;
+  width: 6rem;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+.card .name {
+  margin: 0.5rem;
+}
+
+.card .address {
+  color: var(--color-green);
+  font-size: 14px;
+  margin: 0.5rem;
+}
+
+.card .description {
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+/* social-link container */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a {
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: var(--color-btn-bg);
+  width: 300px;
+  padding: 11px 0;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* .attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--color-green);
+}
